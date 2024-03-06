@@ -16,6 +16,7 @@
 
     <!--Links-->
     <link rel="shortcut icon" href="images/35594.svg" type="image/svg">
+    <link rel="stylesheet" href="css/contato.css">
 </head>
 
 <!--Área do site-->
@@ -50,6 +51,85 @@
                     </li>
                 </ul> 
             </nav>
-    </header>   
+    </header>  
+    
+    <main>
+
+        <h2>Contato</h2>
+        <p>Os campos com * são de preenchimento obrigatório!</p>
+
+        <!--Corpo do formulário-->
+        <form>
+
+            <!--Campos do formulário-->
+            <label>
+                Nome* 
+                <input type="texto" required>
+            </label>
+
+            <label>
+                E-Mail* 
+                <input type="email" required>
+            </label>
+
+            <label>
+                Assunto* 
+                <select>
+                    <option>Dúvidas</option>
+                    <option>Sugestões</option>
+                    <option>Críticas</option>
+                </select>
+            </label>
+
+            <label>
+                Mensagem* 
+                <textarea required></textarea>
+            </label>
+
+            <button type="button">Enviar</button>
+
+        </form>
+    </main>
+
+    <footer>
+        <div>
+            <h3>Gabriel Store - Todos os direitos reservados.</h3>
+
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/" target="_blank"><!--Target redireciona para um site externo-->
+                        <img src="images/facebook.svg" alt="facebook logo">
+                    </a>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <a href="https://www.instagram.com/" target="_blank"><!--Target redireciona para um site externo-->
+                        <img src="images/instagram.svg" alt="instagram logo">
+                    </a>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <a href="https://www.spotify.com/" target="_blank"><!--Target redireciona para um site externo-->
+                        <img src="images/spotify.svg" alt="spotify logo">
+                    </a>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <a href="https://www.youtube.com/" target="_blank"><!--Target redireciona para um site externo-->
+                        <img src="images/youtube.svg" alt="youtube logo">
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+
+    </footer>
+
 </body>
 </html>
