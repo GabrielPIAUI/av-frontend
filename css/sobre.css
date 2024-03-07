@@ -1,5 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+
+/*Reset*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/*Header*/
+.main-header {
+    background-image: url(background-image.png); /*Adiciona imagem ao fundo do header*/
+    background-position: 50% 39%; /*Alinha os elementos nos eixos x e y*/
+    display: flex;/*Colocar elementos centralizados*/
+    flex-direction: column;/*Alinha os elementos um embaixo do outro*/
+    align-items: center;/*Centralizar os elementos*/
+}
+
+.main-nav {
+    width: 100%; /*Ocupar toda a área disponível*/
+    max-width: 600px; /*Trava a largura máxima que definir para o projeto*/
+    padding: 0 16px; /*Primeiro é cima e baixo, segundo é esquerda e direita*/
+}
+
+.header-list-container {
+    display: flex; /*Colocar os elementos na mesma linha*/
+    justify-content: space-between; /*Adiciona espaçamento entre os itens*/
+    align-items: center; /*Alinhar os itens*/
+    padding: 16px 0; /*Primeiro é cima e baixo, segundo é esquerda e direita*/
+}
+
+.nav-item {
+    list-style-type: none; /*Remover as bolinhas do li*/
+    text-transform: uppercase; /*Deixar todas as letras em maiúsculo*/
+    color: red;
+}
+
+.nav-item a {
+    text-decoration: none; 
+    color: inherit; /*Herda a cor do nav-item*/
+}
+
+.nav-item:hover {
+    color: orange;
+    transition: 0,2s;
+}
+
+hr {
+    width: 100%; /*Ocupar toda a área disponível*/
 }
