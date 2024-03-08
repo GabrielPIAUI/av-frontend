@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rock+Salt&display=swap');
 
 
 /*Reset*/
@@ -19,8 +19,9 @@
 
 .main-nav {
     width: 100%; /*Ocupar toda a área disponível*/
-    max-width: 600px; /*Trava a largura máxima que definir para o projeto*/
-    padding: 0 16px; /*Primeiro é cima e baixo, segundo é esquerda e direita*/
+/*  max-width: 600px; /*Trava a largura máxima que definir para o projeto*/
+/*  padding: 0 16px; /*Primeiro é cima e baixo, segundo é esquerda e direita*/
+/*Foi comentado porque já tem o comando no container*/
 }
 
 .header-list-container {
@@ -38,7 +39,7 @@
 
 .nav-item a {
     text-decoration: none; 
-    color: inherit; /*Herda a cor do nav-item*/
+    color: inherit; /*Herda a cor do nav-item (elemento pai)*/
 }
 
 .nav-item:hover {
@@ -48,4 +49,30 @@
 
 hr {
     width: 100%; /*Ocupar toda a área disponível*/
+}
+
+.main-about {
+    padding: 40px 0 64px;
+}
+
+.container {
+    max-width: 600px; /*trava a largura máxima que definimos para o projeto*/ 
+    padding: 0 16px; /*primeiro cima e baixo, segunda esquerda e direita*/
+    margin: 0 auto; /*não aplica cima e baixo, o auto distribui o máximo possível para esquerda e direita (centraliza)*/ 
+}
+
+.about-title {
+    font-family: "Raleway", sans-serif; /*Pega a fonte importada, caso não encontre utiliza a sans-serif (padrão)*/
+    font-size: 32px; /*Tamanho da fonte*/
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.about-image {
+    float: left; /*Alinha a imagem à esquerda e o texto à direita*/
+    margin: 0 20px 10px 0; /*0 topo, 20 direita, 10 baixo e 0 esquerda*/
+    /*Diminuir o tamanho das imagens*/
+    width: 200px; /*Largura*/
+    height: auto; /*Evita a distorção da imagem*/
 }
