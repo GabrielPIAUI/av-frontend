@@ -8,6 +8,23 @@
     box-sizing: border-box;
 }
 
+/*Criação de variáveis no root do CSS*/
+:root {
+    --red: rgb(255,0,0);
+    --gray: #555555;
+    --skyblue: #00bfff;
+    --silver: #c0c0c0;
+    --blue: #00008b;
+    --white: #ffffff;
+    --darkgray: #959595;
+    --orange: #FF8000;
+    --brown: #8A2908;
+}
+
+li {
+    list-style-type: none; /*Retira as bolinhas dos elemtnos*/
+}
+
 /*Header*/
 .main-header {
     background-image: url(background-image.png); /*Adiciona imagem ao fundo do header*/
@@ -32,7 +49,6 @@
 }
 
 .nav-item {
-    list-style-type: none; /*Remover as bolinhas do li*/
     text-transform: uppercase; /*Deixar todas as letras em maiúsculo*/
     color: red;
 }
@@ -75,4 +91,42 @@ hr {
     /*Diminuir o tamanho das imagens*/
     width: 200px; /*Largura*/
     height: auto; /*Evita a distorção da imagem*/
+}
+
+.about-description {
+    color: var(--gray); /*Utiliza variável de cor criada no root do CSS*/
+    text-align: justify; /*Justifica o texto*/
+}
+
+.main-footer {
+    background-color: var(--skyblue); /*Aplica a cor de fundo do rodapé*/
+    padding: 15px 0; /*Aplica espaçamento cima/baixo e esquerda/direita*/
+}
+
+.main-footer-container {
+    display: flex; /*Deixar tudo na mesma linha*/
+    align-items: center; /*Alinhar os itens no centro*/
+    justify-content: space-between; /*Colar nome de um lado e lista de ícones do outro*/
+}
+
+.title-smaller {
+    font-family: "Raleway", sans-serif; /*Pegar a fonte importada*/
+    color: var(--brown); /*Utiliza variável de cor criada no root do CSS*/
+    font-size: 26px; /*Aumenta o tamanho da fonte*/
+}
+
+.list-container {
+    display: flex; /*Deixar tudo na mesma linha*/
+    align-items: center; /*Alinhar os itens no centro*/
+    justify-content: space-between; /*Colar nome de um lado e lista de ícones do outro*/
+}
+
+.footer-item {
+    width: 50px;
+    height: 50px;
+    padding: 15px 0; /*Aplica 15px cima/baixo e 0px esquerda/direita*/
+}
+
+.footer-item + .footer-item {
+    margin-left: 16px; /*Aplica na mesma class seguindo em diante, até chegar em um elemento diferente*/
 }
