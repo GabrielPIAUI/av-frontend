@@ -8,6 +8,12 @@
     box-sizing: border-box;
 }
 
+/*Dar fonte a todo body, com peso Regular 400 e tamanho 22px, caso não ache a fonte importada
+, utiliza a fonte secundária*/
+body {
+    font: 400 22px "Roboto", sans-serif;
+}
+
 /*Criação de variáveis no root do CSS*/
 :root {
     --red: rgb(255,0,0);
@@ -74,11 +80,13 @@ hr {
 .container {
     max-width: 600px; /*trava a largura máxima que definimos para o projeto*/ 
     padding: 0 16px; /*primeiro cima e baixo, segunda esquerda e direita*/
-    margin: 0 auto; /*não aplica cima e baixo, o auto distribui o máximo possível para esquerda e direita (centraliza)*/ 
+    margin: 0 auto; /*não aplica cima e baixo, o auto distribui o máximo possível para
+    esquerda e direita (centraliza)*/ 
 }
 
-.about-title {
-    font-family: "Raleway", sans-serif; /*Pega a fonte importada, caso não encontre utiliza a sans-serif (padrão)*/
+.title-median {
+    font-family: "Raleway", sans-serif; /*Pega a fonte importada, caso não encontre utiliza a
+    sans-serif (padrão)*/
     font-size: 32px; /*Tamanho da fonte*/
     text-align: center;
     text-transform: uppercase;
@@ -103,22 +111,17 @@ hr {
     padding: 15px 0; /*Aplica espaçamento cima/baixo e esquerda/direita*/
 }
 
-.main-footer-container {
+.footer-container {
     display: flex; /*Deixar tudo na mesma linha*/
     align-items: center; /*Alinhar os itens no centro*/
     justify-content: space-between; /*Colar nome de um lado e lista de ícones do outro*/
 }
 
 .title-smaller {
-    font-family: "Raleway", sans-serif; /*Pegar a fonte importada*/
+    font-family: "Raleway", sans-serif; /*Pegar a fonte importada, utiliza a sans-serif caso 
+    não encontre a primeira*/
     color: var(--brown); /*Utiliza variável de cor criada no root do CSS*/
     font-size: 26px; /*Aumenta o tamanho da fonte*/
-}
-
-.list-container {
-    display: flex; /*Deixar tudo na mesma linha*/
-    align-items: center; /*Alinhar os itens no centro*/
-    justify-content: space-between; /*Colar nome de um lado e lista de ícones do outro*/
 }
 
 .footer-item {
@@ -128,5 +131,77 @@ hr {
 }
 
 .footer-item + .footer-item {
-    margin-left: 16px; /*Aplica na mesma class seguindo em diante, até chegar em um elemento diferente*/
+    margin-left: 16px; /*Aplica na mesma class seguindo em diante, até chegar em um elemento
+    diferente*/
+}
+
+.contact-text {
+    text-align: center; /*Alinhar os itens no centro*/
+    padding-bottom: 30px;
+    font-size: 28px;
+    color: var(--gray);
+}
+
+.contact {
+    background-color: var(--skyblue); /*Cor de fundo do 
+    formulário*/
+    padding: 30px; /*Espaçamento*/
+    max-width: 600px; /*Tamanho definido para o projeto*/
+    margin-left: auto; /*Empurra para o centro, com a ajuda do
+    margin-right*/
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.contact-label {
+    display: block; /*Um encima do outro*/
+    margin-bottom: 20px; /*Aumenta o espaço entre elas*/
+    color: var(--blue);
+}
+
+.contact-field {
+    display: block; /*Um encima do outro*/
+    width: 100%; /*Coloca o máximo espaço possível*/
+    height: 30px; /*Aumenta a altura do campo*/
+    font-size: 16px; /*Altera o tamanho da fonte*/
+    padding-left: 10px; /*Empurra o elemento dentro do campo 
+    para esquerda*/
+    border: none; /*Remove a borda*/
+}
+
+.contact-field:focus {
+    background-color: var(--silver); /*Cor de fundo do 
+    formulário*/
+    outline: none; /*Remover a borda que aparece quando uma
+    opção é selecionada*/
+}
+
+textarea.contact-field {
+    height: 200px; /*Altura do campo de Mensagem*/
+    padding: 10px; /*Espaçar em todas as direções*/
+    font-family: "Roboto", Calibri; /*Pegar a fonte importada, utiliza a sans-serif caso 
+    não encontre a primeira*/
+}
+
+.button-form {
+    background-color: var(--blue); /*Cor de fundo do 
+    formulário*/
+    color: var(--white); /*Utiliza variável de cor criada no root do CSS*/
+    border: 2px solid var(--blue); /*Adiciona borda ao botão*/
+    border-radius: 10px; /*Arredonda as bordas do botão*/
+    padding: 2px 6px; /*2 para cima/baixo e 6 para esquerda/direita*/
+    font-weight: bold; /*Aumenta o peso da fonte*/
+    cursor: pointer;
+}
+
+.button-form:hover {
+    color: var(--blue); /*Cor da fonte do botão*/
+    background-color: var(--white); /*Cor do fundo do botão*/
+}
+
+.contact-map {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
 }

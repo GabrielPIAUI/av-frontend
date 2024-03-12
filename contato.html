@@ -16,111 +16,116 @@
 
     <!--Links-->
     <link rel="shortcut icon" href="images/35594.svg" type="image/svg">
-    <link rel="stylesheet" href="css/contato.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <!--Área do site-->
 <body>
 
-    <!--Cabeçalho-->
-    <header>
+    <header class="main-header">
 
-            <!--Navegação-->
-            <nav>
+        <!--Navegação-->
+        <nav class="main-nav container">
 
-                <!--Lista não ordenada-->
-                <ul>
+            <!--Lista não ordenada-->
+            <ul class="header-list-container">
 
-                    <!--Itens da lista-->
-                    <li><!--Logotipo do site-->
-                        <a href="index.html">
-                            <img src="images/logo.png" alt="logo" height="100" width="100">
-                        </a>
-                    </li>
+                <!--Itens da lista-->
+                <li class="nav-item"><!--Logotipo do site-->
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="logo" height="100" width="100">
+                    </a>
+                </li>
 
-                    <li>
-                        <a href="loja.html">Loja</a>
-                    </li>
+                <li class="nav-item">
+                    <a href="loja.html">Loja</a>
+                </li>
 
-                    <li>
-                        <a href="contato.html">Contato</a>
-                    </li>
+                <li class="nav-item">
+                    <a href="contato.html">Contato</a>
+                </li>
 
-                    <li>
-                        <a href="sobre.html">Sobre</a>
-                    </li>
-                </ul> 
-            </nav>
-    </header>  
+                <li class="nav-item">
+                    <a href="sobre.html">Sobre</a>
+                </li>
+            </ul> 
+        </nav>
+        <hr>
+</header> 
     
     <main>
 
-        <h2>Contato</h2>
-        <p>Os campos com * são de preenchimento obrigatório!</p>
+        <h2 class="title-median">Contato</h2>
+        <p class="contact-text">Os campos com * são de preenchimento obrigatório!</p>
 
         <!--Corpo do formulário-->
-        <form>
+        <form class="contact">
 
             <!--Campos do formulário-->
-            <label>
+            <label class="contact-label">
                 Nome* 
-                <input type="texto" required>
+                <input class="contact-field" type="texto" required>
             </label>
 
-            <label>
+            <label class="contact-label">
                 E-Mail* 
-                <input type="email" required>
+                <input class="contact-field" type="email" required>
             </label>
 
-            <label>
+            <label class="contact-label">
                 Assunto* 
-                <select>
+                <select class="contact-field">
+                    <option>Newsletter</option>
                     <option>Dúvidas</option>
                     <option>Sugestões</option>
                     <option>Críticas</option>
                 </select>
             </label>
 
-            <label>
+            <label class="contact-label">
                 Mensagem* 
-                <textarea required></textarea>
+                <textarea class="contact-field" required></textarea>
             </label>
 
-            <button type="button">Enviar</button>
+            <button class="button-form" type="button">Enviar</button>
 
         </form>
+
+        <div class="contact-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.810948373088!2d-38.50629392404194!3d-12.983940460059385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71604c078954e89%3A0x56125baabd92a090!2sMotel%20Amarelinho!5e0!3m2!1spt-BR!2sbr!4v1710247247302!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
     </main>
 
-    <footer>
-        <div>
-            <h3>Gabriel Store - Todos os direitos reservados.</h3>
+    <!--Rodapé do site-->
+    <footer class="main-footer">
+        <div class="footer-container"> 
+            <h3 class="title-smaller">Gabriel Store - Todos os direitos reservados.</h3>
 
-            <ul>
-                <li>
+            <ul class="footer-container">
+
+                <li class="footer-item">
                     <a href="https://www.facebook.com/" target="_blank"><!--Target redireciona para um site externo-->
-                        <img src="images/facebook.svg" alt="facebook logo">
+                        <img class="foto" src="images/facebook.svg" alt="facebook logo">
                     </a>
                 </li>
-            </ul>
 
-            <ul>
-                <li>
+            
+                <li class="footer-item">
                     <a href="https://www.instagram.com/" target="_blank"><!--Target redireciona para um site externo-->
                         <img src="images/instagram.svg" alt="instagram logo">
                     </a>
                 </li>
-            </ul>
+            
 
-            <ul>
-                <li>
+            
+                <li class="footer-item">
                     <a href="https://www.spotify.com/" target="_blank"><!--Target redireciona para um site externo-->
                         <img src="images/spotify.svg" alt="spotify logo">
                     </a>
                 </li>
-            </ul>
-
-            <ul>
-                <li>
+            
+                <li class="footer-item">
                     <a href="https://www.youtube.com/" target="_blank"><!--Target redireciona para um site externo-->
                         <img src="images/youtube.svg" alt="youtube logo">
                     </a>
