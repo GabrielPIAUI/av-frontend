@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rock+Salt&display=swap');
 
 
 /*Reset*/
@@ -204,4 +204,43 @@ textarea.contact-field {
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 20px;
+}
+
+
+/*Index*/
+.title-header {
+    font-family: "Madimi One", cursive; /*Pegar a fonte importada, utiliza a cursive caso não 
+    encontre a primeira*/
+    color: var(--red); /*Utiliza variável de cor criada no root do CSS*/
+    font-size: 38px; /*Altera o tamanho da fonte*/
+    padding-bottom: 10px; 
+}
+
+.title-large {
+    font-family: "Rock Salt", cursive; /*Pegar a fonte importada, utiliza a cursive caso não 
+    encontre a primeira*/
+    font-size: 38px; /*Tamanho da fonte*/
+    color: var(--blue); /*Cor da fonte*/
+    text-align: center; /*Centralizar o texto*/
+    padding-bottom: 10px;
+}
+
+.description {
+    text-align: center; /*Centralizar o texto*/
+    color: var(--gray); /*Cor da fonte*/
+    padding-bottom: 20px;
+}
+
+.title-median-emphasis {
+    background-color: var(--skyblue);
+    color: var(--blue);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
 }
