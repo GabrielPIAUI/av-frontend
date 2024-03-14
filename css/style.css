@@ -10,8 +10,8 @@
 
 /*Dar fonte a todo body, com peso Regular 400 e tamanho 22px, caso não ache a fonte importada
 , utiliza a fonte secundária*/
-body {
-    font: 400 22px "Roboto", sans-serif;
+body, button, input {
+    font: 400 18px "Roboto", sans-serif;
 }
 
 /*Criação de variáveis no root do CSS*/
@@ -191,7 +191,7 @@ textarea.contact-field {
     border-radius: 10px; /*Arredonda as bordas do botão*/
     padding: 2px 6px; /*2 para cima/baixo e 6 para esquerda/direita*/
     font-weight: bold; /*Aumenta o peso da fonte*/
-    cursor: pointer;
+    cursor: pointer; /*Deixar clicável*/
 }
 
 .button-form:hover {
@@ -243,4 +243,49 @@ textarea.contact-field {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 40px;
+    padding-bottom: 30px;
+}
+
+.product {
+    display: flex; /*Coloca todos na mesma linha*/
+    flex-direction: column; /*Alinhar em colunas*/
+    align-items: center; /*Alinhar os itens no centro*/
+}
+
+.product-title {
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+.product-image {
+    width: 320px; /*Travar a largura da imagem para ficar 2 produtos por coluna*/
+    height: 220px; /*Travar a altura da imagem*/
+    margin-bottom: 20px; /**/
+}
+
+.product-price-container {
+    width: 100%; /*Ocupar 100% do espaço disponível*/
+    display: flex; 
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.product-price {
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.button-hover {
+    background-color: var(--skyblue);
+    color: var(--blue);
+    border: 2px solid var(--skyblue);
+    border-radius: 10px;
+    padding: 4px 2px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button-hover:hover {
+    background-color: transparent;
 }
