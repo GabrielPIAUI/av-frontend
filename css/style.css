@@ -111,7 +111,7 @@ hr {
     padding: 15px 0; /*Aplica espaçamento cima/baixo e esquerda/direita*/
 }
 
-.footer-container {
+.main-footer-container {
     display: flex; /*Deixar tudo na mesma linha*/
     align-items: center; /*Alinhar os itens no centro*/
     justify-content: space-between; /*Colar nome de um lado e lista de ícones do outro*/
@@ -122,6 +122,12 @@ hr {
     não encontre a primeira*/
     color: var(--brown); /*Utiliza variável de cor criada no root do CSS*/
     font-size: 26px; /*Aumenta o tamanho da fonte*/
+}
+
+.list-container {
+    display: flex; /*Deixar tudo na mesma linha*/
+    align-items: center; /*Alinhar os itens no centro*/
+    justify-content: space-between; /*Colar nome de um lado e lista de ícones do outro*/
 }
 
 .footer-item {
@@ -332,7 +338,7 @@ textarea.contact-field {
 }
 
 .product-qnt-input {
-    width: 45px;
+    width: 30px;
     height: 35px;
     border: 2px solid var(--blue);
     border-radius: 5px;
@@ -376,4 +382,13 @@ textarea.contact-field {
 
 .purchase-button:hover {
     filter: brightness(0.8);
+}
+
+
+/*Responsividade*/
+
+@media (max-width: 793px) {
+    .main-footer-container{
+    flex-direction: column;
+    }
 }
