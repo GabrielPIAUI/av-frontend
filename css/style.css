@@ -235,6 +235,7 @@ textarea.contact-field {
     text-align: center; /*Centralizar o texto*/
     color: var(--gray); /*Cor da fonte*/
     padding-bottom: 20px;
+    font-family: "Raleway", sans-serif;
 }
 
 .title-median-emphasis {
@@ -338,6 +339,8 @@ textarea.contact-field {
 }
 
 .product-qnt-input {
+    display: flex;
+    margin-left: 30px;
     width: 30px;
     height: 35px;
     border: 2px solid var(--blue);
@@ -352,6 +355,7 @@ textarea.contact-field {
     border-radius: 5px;
     padding: 4px 3px;
     margin-left: 5px;
+    margin-top: 5px;
 }
 
 .remove-product-button:hover {
