@@ -69,6 +69,14 @@ li {
     transition: 0,2s;
 }
 
+.logo-zoom {
+    transition: transform 0.3s ease;
+}
+
+.logo-zoom:hover {
+    transform: scale(1.4);
+}
+
 hr {
     width: 100%; /*Ocupar toda a área disponível*/
 }
@@ -264,10 +272,18 @@ textarea.contact-field {
     margin-bottom: 6px;
 }
 
+.product-box {
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px 5px;
+    margin-bottom: 15px;
+}
+
 .product-image {
     width: 320px; /*Travar a largura da imagem para ficar 2 produtos por coluna*/
     height: 220px; /*Travar a altura da imagem*/
     margin-bottom: 20px; /**/
+    transform-origin: center center;
+    object-fit: cover;
 }
 
 .product-price-container {
